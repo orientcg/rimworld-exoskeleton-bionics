@@ -1,0 +1,2 @@
+# Preserve verified runtime bytes, including XML line endings.
+* -text
