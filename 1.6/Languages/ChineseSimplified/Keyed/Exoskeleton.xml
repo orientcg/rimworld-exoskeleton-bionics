@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <EXB_Energy>能量：{0} / {1}</EXB_Energy>
+  <EXB_Quality>核心品质：{0}；按装甲颜色过载×{1}</EXB_Quality>
+  <EXB_Running>常态</EXB_Running>
+  <EXB_NoCore>核心或肢体不可用</EXB_NoCore>
+  <EXB_OverloadActive>过载中</EXB_OverloadActive>
+  <EXB_OverloadSkill>外骨骼过载</EXB_OverloadSkill>
+  <EXB_OverloadDesc>按装甲颜色放大肢体加成×{0}：蓝色／工业红色1.5，金色2.5，与核心品质无关。总移动速度额外×{0}；完整机甲的武器伤害和近战范围同样×{0}，不再固定×2。有效肢体耗能每游戏秒{1}点，核心回复{2}点；耗尽自动结束。核心与四肢共5件，民用每件1点、军用每件2点；1–5点蓝色，6–10点金色；工业核心统一红色。</EXB_OverloadDesc>
+  <EXB_Unavailable>当前无法启用过载。</EXB_Unavailable>
+  <EXB_Empty>能量不足，等待自动回复。</EXB_Empty>
+  <EXB_MoveMultiplier>外骨骼过载：移动速度 ×{0}</EXB_MoveMultiplier>
+  <EXB_RemoveLimbs>拆除全部四肢外骨骼</EXB_RemoveLimbs>
+  <EXB_RemoveLimbsDesc>立即拆除全部四肢外骨骼，在角色身边返还原等级模块。无需医生、药物或麻醉。永久躯干核心不会被拆除。</EXB_RemoveLimbsDesc>
+  <EXB_NoLimbs>没有可拆除的四肢外骨骼</EXB_NoLimbs>
+  <EXB_RemovalQueued>四肢拆除手术已安排</EXB_RemovalQueued>
+  <EXB_RemovalTitle>外骨骼管理</EXB_RemovalTitle>
+  <EXB_RemovalDesc>在同一页管理金属护甲、安装／更换及拆卸四肢模块。</EXB_RemovalDesc>
+  <EXB_RemovalNoPawn>没有可查看的角色。</EXB_RemovalNoPawn>
+  <EXB_RemovalInstalled>四肢模块 · 已安装 {0} 件</EXB_RemovalInstalled>
+  <EXB_RemovalHint>立即拆卸，无需医生或药物。返还原ID和等级的模块，原生肢体保留。</EXB_RemovalHint>
+  <EXB_RemovalAll>拆卸全部四肢（{0}）</EXB_RemovalAll>
+  <EXB_RemovalNoCore>未安装躯干核心</EXB_RemovalNoCore>
+  <EXB_RemovalCoreRule>核心永久植入，仅可医疗升级到更高等级，不可拆卸返还。工业部件只允许工业核心，升级到非工业核心前先拆下工业部件。</EXB_RemovalCoreRule>
+  <EXB_RemovalCoreQuality>品质：{0} · 永久植入</EXB_RemovalCoreQuality>
+  <EXB_RemovalLocked>核心锁定 · 不可拆卸</EXB_RemovalLocked>
+  <EXB_RemovalOtherPart>其他部位</EXB_RemovalOtherPart>
+  <EXB_RemovalVacant>未安装</EXB_RemovalVacant>
+  <EXB_RemovalEquipped>已安装</EXB_RemovalEquipped>
+  <EXB_RemovalMissing>该身体部位缺失，无法安装外骨骼模块。</EXB_RemovalMissing>
+  <EXB_RemovalEmpty>此部位未安装外骨骼，可走近地面模块后右键安装。</EXB_RemovalEmpty>
+  <EXB_RemovalQuality>品质：{0}</EXB_RemovalQuality>
+  <EXB_RemovalReturnNote>保留ID与等级 · 无品质</EXB_RemovalReturnNote>
+  <EXB_RemovalOne>拆卸</EXB_RemovalOne>
+  <EXB_RemovalReturnTip>拆卸后返还：{0}，放在当前角色身边。</EXB_RemovalReturnTip>
+  <EXB_RemovalFailed>未能拆卸{0}。角色状态已改变、模块已移除或附近无法放置物品；模块未重复返还。</EXB_RemovalFailed>
+  <EXB_RemovalDone>已拆卸{0}，原等级模块已放在角色身边。</EXB_RemovalDone>
+  <EXB_RemovalPartial>已返还 {0} / {1} 件。未成功返还的模块仍保留安装状态。</EXB_RemovalPartial>
+  <EXB_RemovalAllDone>已拆卸并返还 {0} 件四肢模块，核心和原生肢体保留。</EXB_RemovalAllDone>
+  <EXB_QualityAwful>极差</EXB_QualityAwful>
+  <EXB_QualityNormal>一般</EXB_QualityNormal>
+  <EXB_QualityGood>良好</EXB_QualityGood>
+  <EXB_QualityExcellent>极佳</EXB_QualityExcellent>
+  <EXB_QualityMasterwork>大师</EXB_QualityMasterwork>
+  <EXB_QualityLegendary>传奇</EXB_QualityLegendary>
+  <EXB_DirectUnavailable>角色必须清醒、未倒地且可由玩家控制。</EXB_DirectUnavailable>
+  <EXB_DirectUnreachable>无法到达或预约该模块</EXB_DirectUnreachable>
+  <EXB_DirectReplace>直接更换为{0}：{1}</EXB_DirectReplace>
+  <EXB_DirectInstall>直接安装{0}：{1}</EXB_DirectInstall>
+  <EXB_EnergyTitle>外骨骼能量</EXB_EnergyTitle>
+  <EXB_EnergyOffline>未供能</EXB_EnergyOffline>
+  <EXB_EnergyDrain>净耗 {0}/秒 · 剩余 {1}秒</EXB_EnergyDrain>
+  <EXB_EnergySustained>回复充足 · 可持续过载</EXB_EnergySustained>
+  <EXB_EnergyFull>能量已充满</EXB_EnergyFull>
+  <EXB_EnergyRegen>回复 +{0}/秒</EXB_EnergyRegen>
+  <EXB_EnergyIdle>待机 · 无净回复</EXB_EnergyIdle>
+  <EXB_EnergyRatesTip>自动回复：{0}/游戏秒；全部可用肢体的过载消耗：{1}/游戏秒。进度条低于或等于20%时显示琥珀色。</EXB_EnergyRatesTip>
+  <EXB_MechSet>外骨骼完整度：{0}/4。左右手臂与左右腿均已安装时，过载才会变身并启用机甲内置武器；等级可混装，四肢部件无品质。缺件仍可使用原有过载增益，能量独立结算。</EXB_MechSet>
+  <EXB_ArmorIndustrial>工业制式 · 红色 · 过载×1.5</EXB_ArmorIndustrial>
+  <EXB_ArmorRank>装甲总等级：{0}/10 · {1}</EXB_ArmorRank>
+  <EXB_ArmorGold>金色 · 过载×2.5</EXB_ArmorGold>
+  <EXB_ArmorBlue>蓝色 · 过载×1.5</EXB_ArmorBlue>
+  <EXB_IndustrialCoreRequired>工业部件只能安装在工业级核心上。</EXB_IndustrialCoreRequired>
+  <EXB_IndustrialIncompatible>核心不兼容 · 部件效果暂停</EXB_IndustrialIncompatible>
+  <EXB_MetalArmorTitle>金属附加装甲</EXB_MetalArmorTitle>
+  <EXB_MetalArmorEmpty>未装填金属</EXB_MetalArmorEmpty>
+  <EXB_MetalArmorManage>管理装甲</EXB_MetalArmorManage>
+  <EXB_MetalArmorClear>清空并返还 {0} 单位</EXB_MetalArmorClear>
+  <EXB_MetalArmorCleared>已清空；剩余金属已返还至该角色的物品栏。</EXB_MetalArmorCleared>
+  <EXB_MetalArmorFailed>材料不足、不可达或返还失败；原装甲及材料保持。</EXB_MetalArmorFailed>
+  <EXB_MetalArmorAbsorb>吸收100单位</EXB_MetalArmorAbsorb>
+  <EXB_MetalArmorColumns>金属 · 可用数量 / 消耗 · 含核心品质的最大耐久</EXB_MetalArmorColumns>
+  <EXB_MetalArmorInstructions>100单位金属构建护甲血条，上限=100×金属生命值系数×核心品质。吸收75%伤害并等量扣耐久；耗尽解除机甲，核心停机2游戏小时。清空／更换按剩余比例退料至物品栏。</EXB_MetalArmorInstructions>
+  <EXB_MetalArmorTip>完整机甲的金属血条吸收75%入射生命伤害，每吸收1点扣1耐久；耐久不足时差额穿透。不再进行额外金属护甲随机判定。耗尽立即收甲、核心停机2游戏小时；部件基础加成、能量恢复与过载停用。恢复后允许空甲变身。核心品质影响耐久上限；全身部位血量仍按颜色×1.5／×2.5。退出机甲保留剩余耐久。当前可退原金属{0}单位。</EXB_MetalArmorTip>
+  <EXB_ModuleFixed>固定规格模块 · 无品质</EXB_ModuleFixed>
+  <EXB_CoreDamageStatus>核心损坏：停机2游戏小时，期间部件加成、能量恢复与过载停用。</EXB_CoreDamageStatus>
+  <EXB_CoreDamageShort>核心损坏</EXB_CoreDamageShort>
+  <EXB_MetalArmorQuality>核心品质：{0} · 耐久上限×{1} · 固定吸收75%</EXB_MetalArmorQuality>
+  <EXB_ManagementShort>外骨骼</EXB_ManagementShort>
+  <EXB_ArmorBar>护甲</EXB_ArmorBar>
+  <EXB_EnergyBar>能量</EXB_EnergyBar>
+  <EXB_ManageLimbs>四肢模块 · 已安装 {0} 件</EXB_ManageLimbs>
+  <EXB_ManagementHint>选择实物模块后前往安装；更换成功才消耗新件并返还旧件。所有操作仅作用于当前角色。</EXB_ManagementHint>
+  <EXB_ManageArmorNoCore>尚无可用核心。先通过医疗手术安装核心，即可在此管理金属护甲。</EXB_ManageArmorNoCore>
+  <EXB_ManageMetalStock>所选金属可用 {0} / 100 单位 · 装填后上限 {1}。吸收75%生命伤害；清空／更换按剩余比例退料。</EXB_ManageMetalStock>
+  <EXB_ManageJobQueued>已安排操作。</EXB_ManageJobQueued>
+  <EXB_ManageInstallFailed>模块已不可用、部位不匹配或材料不可达；原装配保持。</EXB_ManageInstallFailed>
+  <EXB_ManageInstall>安装模块</EXB_ManageInstall>
+  <EXB_ManageReplace>更换模块</EXB_ManageReplace>
+  <EXB_ManageInventory>随身库存</EXB_ManageInventory>
+  <EXB_ManageMap>地图</EXB_ManageMap>
+  <EXB_ManageNoStock>没有可取用且匹配此部位的模块（工业模块需要工业核心）。</EXB_ManageNoStock>
+</LanguageData>

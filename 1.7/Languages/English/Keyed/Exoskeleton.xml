@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <EXB_Energy>Energy: {0} / {1}</EXB_Energy>
+  <EXB_Quality>Core quality: {0}; armor-color overload x{1}</EXB_Quality>
+  <EXB_Running>Normal operation</EXB_Running>
+  <EXB_NoCore>Core or limb unavailable</EXB_NoCore>
+  <EXB_OverloadActive>Overloading</EXB_OverloadActive>
+  <EXB_OverloadSkill>Exoskeleton overload</EXB_OverloadSkill>
+  <EXB_OverloadDesc>Armor-color bonus x{0}: blue/industrial red 1.5, gold 2.5, independent of core quality. Extra movement, complete-mech weapon damage and melee range all use the same x{0} factor. Eligible limb drain {1}/game second; regeneration {2}. Stops at zero energy. Count core plus four limbs: civilian 1, military 2; 1-5 blue, 6-10 gold. Industrial core forces red.</EXB_OverloadDesc>
+  <EXB_Unavailable>Overload is currently unavailable.</EXB_Unavailable>
+  <EXB_Empty>No energy. Wait for automatic regeneration.</EXB_Empty>
+  <EXB_MoveMultiplier>Exoskeleton overload: move speed x{0}</EXB_MoveMultiplier>
+  <EXB_RemoveLimbs>Remove all exoskeleton limbs</EXB_RemoveLimbs>
+  <EXB_RemoveLimbsDesc>Detach all limb modules beside the pawn, preserving IDs and tiers. No doctor, medicine or anesthesia required. The permanent core remains.</EXB_RemoveLimbsDesc>
+  <EXB_NoLimbs>No exoskeleton limb modules installed</EXB_NoLimbs>
+  <EXB_RemovalQueued>Limb removal operation already queued</EXB_RemovalQueued>
+  <EXB_RemovalTitle>Exoskeleton management</EXB_RemovalTitle>
+  <EXB_RemovalDesc>Manage metal armor, install, replace and detach limb modules on this page.</EXB_RemovalDesc>
+  <EXB_RemovalNoPawn>No pawn available.</EXB_RemovalNoPawn>
+  <EXB_RemovalInstalled>Limb modules · {0} installed</EXB_RemovalInstalled>
+  <EXB_RemovalHint>Detach immediately without medical work. Original IDs and tiers are preserved, and original limbs remain intact.</EXB_RemovalHint>
+  <EXB_RemovalAll>Detach all limbs ({0})</EXB_RemovalAll>
+  <EXB_RemovalNoCore>No torso core installed</EXB_RemovalNoCore>
+  <EXB_RemovalCoreRule>Permanent core: medical upgrades to higher tiers only, no removal/refund. Remove industrial modules before upgrading to a non-industrial core.</EXB_RemovalCoreRule>
+  <EXB_RemovalCoreQuality>Quality: {0} · permanent implant</EXB_RemovalCoreQuality>
+  <EXB_RemovalLocked>Core locked · permanent</EXB_RemovalLocked>
+  <EXB_RemovalOtherPart>Other body part</EXB_RemovalOtherPart>
+  <EXB_RemovalVacant>Empty</EXB_RemovalVacant>
+  <EXB_RemovalEquipped>Installed</EXB_RemovalEquipped>
+  <EXB_RemovalMissing>This body part is missing and cannot receive a module.</EXB_RemovalMissing>
+  <EXB_RemovalEmpty>No module here. Approach a module on the ground and right-click to install it.</EXB_RemovalEmpty>
+  <EXB_RemovalQuality>Quality: {0}</EXB_RemovalQuality>
+  <EXB_RemovalReturnNote>Preserves ID and tier; no quality</EXB_RemovalReturnNote>
+  <EXB_RemovalOne>Detach</EXB_RemovalOne>
+  <EXB_RemovalReturnTip>Returns {0} beside the current pawn.</EXB_RemovalReturnTip>
+  <EXB_RemovalFailed>Could not detach {0}. The pawn state changed, the module was already removed, or no placement was possible. No duplicate item was returned.</EXB_RemovalFailed>
+  <EXB_RemovalDone>Detached {0}; the original-tier module was placed beside this pawn.</EXB_RemovalDone>
+  <EXB_RemovalPartial>Returned {0} / {1} modules. Modules that could not be returned remain installed.</EXB_RemovalPartial>
+  <EXB_RemovalAllDone>Detached and returned {0} limb modules. The core and natural limbs remain intact.</EXB_RemovalAllDone>
+  <EXB_QualityAwful>awful</EXB_QualityAwful>
+  <EXB_QualityNormal>normal</EXB_QualityNormal>
+  <EXB_QualityGood>good</EXB_QualityGood>
+  <EXB_QualityExcellent>excellent</EXB_QualityExcellent>
+  <EXB_QualityMasterwork>masterwork</EXB_QualityMasterwork>
+  <EXB_QualityLegendary>legendary</EXB_QualityLegendary>
+  <EXB_DirectUnavailable>Requires an awake, standing, player-controlled colonist.</EXB_DirectUnavailable>
+  <EXB_DirectUnreachable>Cannot reach or reserve this module.</EXB_DirectUnreachable>
+  <EXB_DirectReplace>Replace with {0}: {1}</EXB_DirectReplace>
+  <EXB_DirectInstall>Install {0}: {1}</EXB_DirectInstall>
+  <EXB_EnergyTitle>Exoskeleton energy</EXB_EnergyTitle>
+  <EXB_EnergyOffline>Core offline</EXB_EnergyOffline>
+  <EXB_EnergyDrain>-{0}/s | {1}s left</EXB_EnergyDrain>
+  <EXB_EnergySustained>Sustainable overload</EXB_EnergySustained>
+  <EXB_EnergyFull>Fully charged</EXB_EnergyFull>
+  <EXB_EnergyRegen>Regenerating +{0}/s</EXB_EnergyRegen>
+  <EXB_EnergyIdle>Idle | No regeneration</EXB_EnergyIdle>
+  <EXB_EnergyRatesTip>Regeneration: {0}/game second; overload drain from all available limbs: {1}/game second. The bar turns amber at 20% energy or below.</EXB_EnergyRatesTip>
+  <EXB_MechSet>Exoskeleton set: {0}/4. Overload transforms into the mech and enables its built-in weapons only with both arms and both legs installed. Mixed tiers and qualities count. Partial sets keep normal overload bonuses. Each pawn uses independent energy.</EXB_MechSet>
+  <EXB_ArmorIndustrial>Industrial configuration · Red · Overload x1.5</EXB_ArmorIndustrial>
+  <EXB_ArmorRank>Armor rank: {0}/10 · {1}</EXB_ArmorRank>
+  <EXB_ArmorGold>Gold · Overload x2.5</EXB_ArmorGold>
+  <EXB_ArmorBlue>Blue · Overload x1.5</EXB_ArmorBlue>
+  <EXB_IndustrialCoreRequired>Industrial modules require an industrial core.</EXB_IndustrialCoreRequired>
+  <EXB_IndustrialIncompatible>Incompatible core · Module inactive</EXB_IndustrialIncompatible>
+  <EXB_MetalArmorTitle>Metal armor plating</EXB_MetalArmorTitle>
+  <EXB_MetalArmorEmpty>No metal loaded</EXB_MetalArmorEmpty>
+  <EXB_MetalArmorManage>Manage armor</EXB_MetalArmorManage>
+  <EXB_MetalArmorClear>Clear and refund {0}</EXB_MetalArmorClear>
+  <EXB_MetalArmorCleared>Cleared. Remaining metal was returned to this pawn's inventory.</EXB_MetalArmorCleared>
+  <EXB_MetalArmorFailed>Insufficient or inaccessible material, or refund failed. Existing armor and resources are unchanged.</EXB_MetalArmorFailed>
+  <EXB_MetalArmorAbsorb>Absorb 100 units</EXB_MetalArmorAbsorb>
+  <EXB_MetalArmorColumns>Metal / available / cost / maximum durability including core quality</EXB_MetalArmorColumns>
+  <EXB_MetalArmorInstructions>100 metal creates an armor health bar. Maximum = 100 x metal hit-point factor x core quality. Absorbs 75% of health damage at equal durability cost. Depletion retracts the mech and disables its core for 2 in-game hours. Clear or replace to refund remaining metal.</EXB_MetalArmorInstructions>
+  <EXB_MetalArmorTip>Complete-mech metal health absorbs 75% of incoming health damage, spending one durability per absorbed damage. Any shortage passes through. No extra random metal armor roll. Depletion instantly retracts the mech and disables limb bonuses, energy recovery and overload for 2 in-game hours. Recovery allows empty-armor transformation. Core quality scales maximum durability. Body-part health still uses the color multiplier x1.5/x2.5. Deactivation keeps durability. Refundable metal: {0}.</EXB_MetalArmorTip>
+  <EXB_ModuleFixed>Fixed specification; no quality</EXB_ModuleFixed>
+  <EXB_CoreDamageStatus>Core damaged: offline for 2 in-game hours. Limb bonuses, energy recovery and overload are disabled.</EXB_CoreDamageStatus>
+  <EXB_CoreDamageShort>Core damaged</EXB_CoreDamageShort>
+  <EXB_MetalArmorQuality>Core quality: {0}; maximum durability x{1}; absorbs 75%</EXB_MetalArmorQuality>
+  <EXB_ManagementShort>Exoskeleton</EXB_ManagementShort>
+  <EXB_ArmorBar>Armor</EXB_ArmorBar>
+  <EXB_EnergyBar>Energy</EXB_EnergyBar>
+  <EXB_ManageLimbs>Limb modules · {0} installed</EXB_ManageLimbs>
+  <EXB_ManagementHint>Select a real module to fetch and install. Replacement consumes the new module and returns the old one on success. Actions affect only the displayed pawn.</EXB_ManagementHint>
+  <EXB_ManageArmorNoCore>No core installed. Install a core through surgery to manage metal armor here.</EXB_ManageArmorNoCore>
+  <EXB_ManageMetalStock>Selected metal: {0} / 100 units available; reloaded maximum {1}. Absorbs 75% of health damage; clearing/replacing refunds the remaining metal fraction.</EXB_ManageMetalStock>
+  <EXB_ManageJobQueued>Operation queued.</EXB_ManageJobQueued>
+  <EXB_ManageInstallFailed>Module unavailable, wrong body part, or unreachable. Existing installation unchanged.</EXB_ManageInstallFailed>
+  <EXB_ManageInstall>Install module</EXB_ManageInstall>
+  <EXB_ManageReplace>Replace module</EXB_ManageReplace>
+  <EXB_ManageInventory>Inventory</EXB_ManageInventory>
+  <EXB_ManageMap>Map</EXB_ManageMap>
+  <EXB_ManageNoStock>No accessible module fits this body part. Industrial modules need an industrial core.</EXB_ManageNoStock>
+</LanguageData>

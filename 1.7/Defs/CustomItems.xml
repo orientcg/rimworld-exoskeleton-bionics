@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="EXB_CoreItemBase">
+    <defName>EXB_CustomArm_159596_Item</defName>
+    <label>civilian exoskeleton core variant</label>
+    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 50; fixed regeneration 4 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Exoskeleton/Core</texPath>
+      <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
+      <drawSize>0.7</drawSize>
+      <color>(0.12,0.58,1)</color>
+    </graphicData>
+    <modExtensions>
+      <li Class="ExoBionics.ExoItemExtension">
+        <tier>1</tier>
+      </li>
+    </modExtensions>
+    <statBases Inherit="False">
+      <MaxHitPoints>50.0</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4.0</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <WorkToMake>18000.0</WorkToMake>
+      <Mass>2.0</Mass>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  <HediffDef ParentName="EXB_CoreBase">
+    <defName>EXB_CustomArm_159596_Installed</defName>
+    <label>civilian exoskeleton core variant</label>
+    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 50; fixed regeneration 4 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <modExtensions>
+      <li Class="ExoBionics.ExoModuleExtension">
+        <returnedItem>EXB_CustomArm_159596_Item</returnedItem>
+        <family>Core</family>
+        <tier>1</tier>
+        <overloadCostPerSecond>0.0</overloadCostPerSecond>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="ExoBionics.HediffCompProperties_ExoPower">
+        <capacity>50.0</capacity>
+        <regenerationPerSecond>4.0</regenerationPerSecond>
+      </li>
+    </comps>
+    <defaultLabelColor>(0.12,0.58,1)</defaultLabelColor>
+  </HediffDef>
+  <RecipeDef ParentName="EXB_CraftBase">
+    <defName>EXB_CustomArm_159596_Make</defName>
+    <label>make civilian exoskeleton core variant</label>
+    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 50; fixed regeneration 4 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <jobString>Making civilian exoskeleton core variant.</jobString>
+    <products>
+      <EXB_CustomArm_159596_Item>1</EXB_CustomArm_159596_Item>
+    </products>
+    <workAmount>18000.0</workAmount>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisites Inherit="False">
+      <li>MicroelectronicsBasics</li>
+      <li>Prosthetics</li>
+    </researchPrerequisites>
+    <recipeUsers Inherit="False">
+      <li>TableMachining</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="EXB_InstallBase">
+    <defName>EXB_CustomArm_159596_Install</defName>
+    <label>install civilian exoskeleton core variant</label>
+    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 50; fixed regeneration 4 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <jobString>Installing civilian exoskeleton core variant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EXB_CustomArm_159596_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EXB_CustomArm_159596_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EXB_CustomArm_159596_Installed</addsHediff>
+  </RecipeDef>
+  <ThingDef ParentName="EXB_ItemBase">
+    <defName>EXB_CustomCore_353544_Item</defName>
+    <label>industrial exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +25 percentage points; hungerRateFactor x1.1 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Exoskeleton/Node</texPath>
+      <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
+      <drawSize>0.7</drawSize>
+      <color>(1,0.18,0.14)</color>
+    </graphicData>
+    <modExtensions>
+      <li Class="ExoBionics.ExoItemExtension">
+        <tier>2</tier>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="ExoBionics.CompProperties_ExoLimb">
+        <hediff>EXB_CustomCore_353544_Installed</hediff>
+        <bodyPart>Arm</bodyPart>
+      </li>
+    </comps>
+    <statBases Inherit="False">
+      <MaxHitPoints>50.0</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4.0</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <WorkToMake>18000.0</WorkToMake>
+      <Mass>2.0</Mass>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+    </costList>
+  </ThingDef>
+  <HediffDef ParentName="EXB_ArmBase">
+    <defName>EXB_CustomCore_353544_Installed</defName>
+    <label>industrial exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +25 percentage points; hungerRateFactor x1.1 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <modExtensions>
+      <li Class="ExoBionics.ExoModuleExtension">
+        <returnedItem>EXB_CustomCore_353544_Item</returnedItem>
+        <family>Arm</family>
+        <tier>2</tier>
+        <overloadCostPerSecond>2.5</overloadCostPerSecond>
+      </li>
+    </modExtensions>
+    <defaultLabelColor>(1,0.18,0.14)</defaultLabelColor>
+    <stages Inherit="False">
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>offline</label>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <label>powered</label>
+        <statOffsets>
+          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+        </statOffsets>
+        <hungerRateFactor>1.1</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="EXB_CraftBase">
+    <defName>EXB_CustomCore_353544_Make</defName>
+    <label>make industrial exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +25 percentage points; hungerRateFactor x1.1 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Making industrial exoskeleton arm module variant.</jobString>
+    <products>
+      <EXB_CustomCore_353544_Item>1</EXB_CustomCore_353544_Item>
+    </products>
+    <workAmount>18000.0</workAmount>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisites Inherit="False">
+      <li>Fabrication</li>
+      <li>Bionics</li>
+    </researchPrerequisites>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="EXB_InstallBase">
+    <defName>EXB_CustomCore_353544_Install</defName>
+    <label>install industrial exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +25 percentage points; hungerRateFactor x1.1 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Installing industrial exoskeleton arm module variant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EXB_CustomCore_353544_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EXB_CustomCore_353544_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EXB_CustomCore_353544_Installed</addsHediff>
+  </RecipeDef>
+  <ThingDef ParentName="EXB_ItemBase">
+    <defName>EXB_CustomArm_375479_Item</defName>
+    <label>industrial exoskeleton leg module variant</label>
+    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Exoskeleton/Node</texPath>
+      <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
+      <drawSize>0.7</drawSize>
+      <color>(1,0.18,0.14)</color>
+    </graphicData>
+    <modExtensions>
+      <li Class="ExoBionics.ExoItemExtension">
+        <tier>2</tier>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="ExoBionics.CompProperties_ExoLimb">
+        <hediff>EXB_CustomArm_375479_Installed</hediff>
+        <bodyPart>Leg</bodyPart>
+      </li>
+    </comps>
+    <statBases Inherit="False">
+      <MaxHitPoints>50.0</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4.0</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <WorkToMake>18000.0</WorkToMake>
+      <Mass>2.0</Mass>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <Steel>400</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <Plasteel>80</Plasteel>
+    </costList>
+  </ThingDef>
+  <HediffDef ParentName="EXB_LegBase">
+    <defName>EXB_CustomArm_375479_Installed</defName>
+    <label>industrial exoskeleton leg module variant</label>
+    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <modExtensions>
+      <li Class="ExoBionics.ExoModuleExtension">
+        <returnedItem>EXB_CustomArm_375479_Item</returnedItem>
+        <family>Leg</family>
+        <tier>2</tier>
+        <overloadCostPerSecond>2.5</overloadCostPerSecond>
+      </li>
+    </modExtensions>
+    <defaultLabelColor>(1,0.18,0.14)</defaultLabelColor>
+    <stages Inherit="False">
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>offline</label>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <label>powered</label>
+        <statOffsets>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="EXB_CraftBase">
+    <defName>EXB_CustomArm_375479_Make</defName>
+    <label>make industrial exoskeleton leg module variant</label>
+    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Making industrial exoskeleton leg module variant.</jobString>
+    <products>
+      <EXB_CustomArm_375479_Item>1</EXB_CustomArm_375479_Item>
+    </products>
+    <workAmount>18000.0</workAmount>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>400</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisites Inherit="False">
+      <li>Fabrication</li>
+      <li>Bionics</li>
+    </researchPrerequisites>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="EXB_InstallBase">
+    <defName>EXB_CustomArm_375479_Install</defName>
+    <label>install industrial exoskeleton leg module variant</label>
+    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Installing industrial exoskeleton leg module variant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EXB_CustomArm_375479_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EXB_CustomArm_375479_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EXB_CustomArm_375479_Installed</addsHediff>
+  </RecipeDef>
+  <ThingDef ParentName="EXB_ItemBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_734189_Item</defName>
+    <label>military exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: incoming damage multiplier x0.8 (fixed per module); melee damage factor x1.5; melee cooldown x0.6. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Exoskeleton/Node</texPath>
+      <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
+      <drawSize>0.7</drawSize>
+      <color>(1,0.76,0.16)</color>
+    </graphicData>
+    <modExtensions>
+      <li Class="ExoBionics.ExoItemExtension">
+        <tier>3</tier>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="ExoBionics.CompProperties_ExoLimb">
+        <hediff>EXB_CustomArm_734189_Installed</hediff>
+        <bodyPart>Arm</bodyPart>
+      </li>
+    </comps>
+    <statBases Inherit="False">
+      <MaxHitPoints>50.0</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4.0</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <WorkToMake>18000.0</WorkToMake>
+      <Mass>2.0</Mass>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <Steel>1000</Steel>
+      <ComponentIndustrial>40</ComponentIndustrial>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  <HediffDef ParentName="EXB_ArmBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_734189_Installed</defName>
+    <label>military exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: incoming damage multiplier x0.8 (fixed per module); melee damage factor x1.5; melee cooldown x0.6. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <modExtensions>
+      <li Class="ExoBionics.ExoModuleExtension">
+        <returnedItem>EXB_CustomArm_734189_Item</returnedItem>
+        <family>Arm</family>
+        <tier>3</tier>
+        <overloadCostPerSecond>10.0</overloadCostPerSecond>
+      </li>
+    </modExtensions>
+    <defaultLabelColor>(1,0.76,0.16)</defaultLabelColor>
+    <stages Inherit="False">
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>offline</label>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <label>powered</label>
+        <statFactors>
+          <IncomingDamageFactor>0.8</IncomingDamageFactor>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+          <MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="EXB_CraftBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_734189_Make</defName>
+    <label>make military exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: incoming damage multiplier x0.8 (fixed per module); melee damage factor x1.5; melee cooldown x0.6. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Making military exoskeleton arm module variant.</jobString>
+    <products>
+      <EXB_CustomArm_734189_Item>1</EXB_CustomArm_734189_Item>
+    </products>
+    <workAmount>18000.0</workAmount>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1000</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisites Inherit="False">
+      <li>AdvancedFabrication</li>
+      <li>SpecializedLimbs</li>
+    </researchPrerequisites>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_734189_Install</defName>
+    <label>install military exoskeleton arm module variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: incoming damage multiplier x0.8 (fixed per module); melee damage factor x1.5; melee cooldown x0.6. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Installing military exoskeleton arm module variant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EXB_CustomArm_734189_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EXB_CustomArm_734189_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EXB_CustomArm_734189_Installed</addsHediff>
+  </RecipeDef>
+  <ThingDef ParentName="EXB_ItemBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_396553_Item</defName>
+    <label>military exoskeleton arm module variant variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: aiming time -15 percentage points; incoming damage multiplier x0.8 (fixed per module); ranged cooldown multiplier x0.6 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Exoskeleton/Node</texPath>
+      <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
+      <drawSize>0.7</drawSize>
+      <color>(1,0.76,0.16)</color>
+    </graphicData>
+    <modExtensions>
+      <li Class="ExoBionics.ExoItemExtension">
+        <tier>3</tier>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="ExoBionics.CompProperties_ExoLimb">
+        <hediff>EXB_CustomArm_396553_Installed</hediff>
+        <bodyPart>Arm</bodyPart>
+      </li>
+    </comps>
+    <statBases Inherit="False">
+      <MaxHitPoints>50.0</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>-4.0</Beauty>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <WorkToMake>18000.0</WorkToMake>
+      <Mass>2.0</Mass>
+      <MarketValue>600.0</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <Steel>1000</Steel>
+      <ComponentIndustrial>40</ComponentIndustrial>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  <HediffDef ParentName="EXB_ArmBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_396553_Installed</defName>
+    <label>military exoskeleton arm module variant variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: aiming time -15 percentage points; incoming damage multiplier x0.8 (fixed per module); ranged cooldown multiplier x0.6 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <modExtensions>
+      <li Class="ExoBionics.ExoModuleExtension">
+        <returnedItem>EXB_CustomArm_396553_Item</returnedItem>
+        <family>Arm</family>
+        <tier>3</tier>
+        <overloadCostPerSecond>10.0</overloadCostPerSecond>
+      </li>
+    </modExtensions>
+    <defaultLabelColor>(1,0.76,0.16)</defaultLabelColor>
+    <stages Inherit="False">
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>offline</label>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <label>powered</label>
+        <statOffsets>
+          <AimingDelayFactor>-0.15</AimingDelayFactor>
+        </statOffsets>
+        <statFactors>
+          <IncomingDamageFactor>0.8</IncomingDamageFactor>
+          <RangedCooldownFactor>0.6</RangedCooldownFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="EXB_CraftBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_396553_Make</defName>
+    <label>make military exoskeleton arm module variant variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: aiming time -15 percentage points; incoming damage multiplier x0.8 (fixed per module); ranged cooldown multiplier x0.6 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Making military exoskeleton arm module variant variant.</jobString>
+    <products>
+      <EXB_CustomArm_396553_Item>1</EXB_CustomArm_396553_Item>
+    </products>
+    <workAmount>18000.0</workAmount>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1000</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisites Inherit="False">
+      <li>AdvancedFabrication</li>
+      <li>SpecializedLimbs</li>
+    </researchPrerequisites>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>EXB_CustomArm_396553_Install</defName>
+    <label>install military exoskeleton arm module variant variant</label>
+    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: aiming time -15 percentage points; incoming damage multiplier x0.8 (fixed per module); ranged cooldown multiplier x0.6 (fixed per module). Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 10 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <jobString>Installing military exoskeleton arm module variant variant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EXB_CustomArm_396553_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EXB_CustomArm_396553_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EXB_CustomArm_396553_Installed</addsHediff>
+  </RecipeDef>
+</Defs>
