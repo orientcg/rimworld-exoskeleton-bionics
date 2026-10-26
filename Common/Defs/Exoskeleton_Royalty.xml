@@ -110,7 +110,7 @@ Permanently implanted in the torso. Personal kills refill its energy; a complete
       <li>SpecializedLimbs</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">
@@ -266,7 +266,7 @@ Requires an available compatible core. Preserves the original limb; install or r
       <li>SpecializedLimbs</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">
@@ -418,7 +418,7 @@ Requires an available compatible core. Preserves the original limb; install or r
       <li>SpecializedLimbs</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">

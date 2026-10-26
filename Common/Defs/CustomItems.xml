@@ -233,7 +233,7 @@ Requires an industrial core. Preserves the original limb; install or remove thro
       <li>Bionics</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase">
@@ -375,7 +375,7 @@ Requires an industrial core. Preserves the original limb; install or remove thro
       <li>Bionics</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase">
@@ -529,7 +529,7 @@ Requires an available compatible core. Preserves the original limb; install or r
       <li>SpecializedLimbs</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">
@@ -685,7 +685,7 @@ Requires an available compatible core. Preserves the original limb; install or r
       <li>SpecializedLimbs</li>
     </researchPrerequisites>
     <recipeUsers Inherit="False">
-      <li>FabricationBench</li>
+      <li>TableMachining</li>
     </recipeUsers>
   </RecipeDef>
   <RecipeDef ParentName="EXB_InstallBase" MayRequire="Ludeon.RimWorld.Royalty">
