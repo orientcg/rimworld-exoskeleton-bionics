@@ -340,7 +340,8 @@
   <ThingDef ParentName="EXB_CoreItemBase">
     <defName>EXB_CoreItem</defName>
     <label>civilian exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 100; fixed regeneration 2 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>A torso implant that powers the exoskeleton and replenishes its energy. Personal kills fully recharge the core.
+A complete set of limb modules enables mech transformation during overload. The implant is permanent and can only be upgraded through surgery.</description>
     <graphicData Inherit="False">
       <texPath>Things/Exoskeleton/Core</texPath>
       <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
@@ -369,7 +370,8 @@
   <HediffDef ParentName="EXB_CoreBase">
     <defName>EXB_Core</defName>
     <label>civilian exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 100; fixed regeneration 2 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>A torso implant that powers the exoskeleton and replenishes its energy. Personal kills fully recharge the core.
+A complete set of limb modules enables mech transformation during overload. The implant is permanent and can only be upgraded through surgery.</description>
     <modExtensions>
       <li Class="ExoBionics.ExoModuleExtension">
         <returnedItem>EXB_CoreItem</returnedItem>
@@ -389,7 +391,8 @@
   <RecipeDef ParentName="EXB_CraftBase">
     <defName>EXB_MakeCore</defName>
     <label>make civilian exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 100; fixed regeneration 2 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>A torso implant that powers the exoskeleton and replenishes its energy. Personal kills fully recharge the core.
+A complete set of limb modules enables mech transformation during overload. The implant is permanent and can only be upgraded through surgery.</description>
     <jobString>Making civilian exoskeleton core.</jobString>
     <products>
       <EXB_CoreItem>1</EXB_CoreItem>
@@ -430,7 +433,8 @@
   <RecipeDef ParentName="EXB_InstallBase">
     <defName>EXB_InstallCore</defName>
     <label>install civilian exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 100; fixed regeneration 2 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>A torso implant that powers the exoskeleton and replenishes its energy. Personal kills fully recharge the core.
+A complete set of limb modules enables mech transformation during overload. The implant is permanent and can only be upgraded through surgery.</description>
     <jobString>Installing civilian exoskeleton core.</jobString>
     <ingredients>
       <li>
@@ -455,7 +459,8 @@
   <ThingDef ParentName="EXB_ItemBase">
     <defName>EXB_ArmItem</defName>
     <label>civilian exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: global work speed +10 percentage points; aiming time -10 percentage points; melee damage factor x1.1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Helps the wearer work faster, aim more quickly and strike harder in melee.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <graphicData Inherit="False">
       <texPath>Things/Exoskeleton/Node</texPath>
       <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
@@ -490,7 +495,8 @@
   <HediffDef ParentName="EXB_ArmBase">
     <defName>EXB_Arm</defName>
     <label>civilian exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: global work speed +10 percentage points; aiming time -10 percentage points; melee damage factor x1.1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Helps the wearer work faster, aim more quickly and strike harder in melee.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <modExtensions>
       <li Class="ExoBionics.ExoModuleExtension">
         <returnedItem>EXB_ArmItem</returnedItem>
@@ -521,7 +527,8 @@
   <RecipeDef ParentName="EXB_CraftBase">
     <defName>EXB_MakeArm</defName>
     <label>make civilian exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: global work speed +10 percentage points; aiming time -10 percentage points; melee damage factor x1.1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Helps the wearer work faster, aim more quickly and strike harder in melee.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Making civilian exoskeleton arm module.</jobString>
     <products>
       <EXB_ArmItem>1</EXB_ArmItem>
@@ -562,7 +569,8 @@
   <RecipeDef ParentName="EXB_InstallBase">
     <defName>EXB_InstallArm</defName>
     <label>install civilian exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. With an available compatible core, one fixed-specification module provides: global work speed +10 percentage points; aiming time -10 percentage points; melee damage factor x1.1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Helps the wearer work faster, aim more quickly and strike harder in melee.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Installing civilian exoskeleton arm module.</jobString>
     <ingredients>
       <li>
@@ -587,7 +595,8 @@
   <ThingDef ParentName="EXB_ItemBase">
     <defName>EXB_LegItem</defName>
     <label>civilian exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. With an available compatible core, one fixed-specification module provides: move speed +0.2. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Assists walking so the wearer can move faster.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <graphicData Inherit="False">
       <texPath>Things/Exoskeleton/Node</texPath>
       <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
@@ -622,7 +631,8 @@
   <HediffDef ParentName="EXB_LegBase">
     <defName>EXB_Leg</defName>
     <label>civilian exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. With an available compatible core, one fixed-specification module provides: move speed +0.2. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Assists walking so the wearer can move faster.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <modExtensions>
       <li Class="ExoBionics.ExoModuleExtension">
         <returnedItem>EXB_LegItem</returnedItem>
@@ -649,7 +659,8 @@
   <RecipeDef ParentName="EXB_CraftBase">
     <defName>EXB_MakeLeg</defName>
     <label>make civilian exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. With an available compatible core, one fixed-specification module provides: move speed +0.2. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Assists walking so the wearer can move faster.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Making civilian exoskeleton leg module.</jobString>
     <products>
       <EXB_LegItem>1</EXB_LegItem>
@@ -690,7 +701,8 @@
   <RecipeDef ParentName="EXB_InstallBase">
     <defName>EXB_InstallLeg</defName>
     <label>install civilian exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. With an available compatible core, one fixed-specification module provides: move speed +0.2. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Assists walking so the wearer can move faster.
+Requires an available compatible core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Installing civilian exoskeleton leg module.</jobString>
     <ingredients>
       <li>
@@ -715,7 +727,8 @@
   <ThingDef ParentName="EXB_CoreItemBase">
     <defName>EXB_CoreItemIndustrial</defName>
     <label>industrial exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 10; fixed regeneration 20 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>An industrial power core with limited reserves and rapid recharge. Supports industrial modules and gives the mech a red appearance.
+Permanently implanted in the torso. Personal kills refill its energy; a complete set of limb modules enables mech transformation during overload.</description>
     <graphicData Inherit="False">
       <texPath>Things/Exoskeleton/Core</texPath>
       <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
@@ -745,7 +758,8 @@
   <HediffDef ParentName="EXB_CoreBase">
     <defName>EXB_CoreIndustrial</defName>
     <label>industrial exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 10; fixed regeneration 20 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>An industrial power core with limited reserves and rapid recharge. Supports industrial modules and gives the mech a red appearance.
+Permanently implanted in the torso. Personal kills refill its energy; a complete set of limb modules enables mech transformation during overload.</description>
     <modExtensions>
       <li Class="ExoBionics.ExoModuleExtension">
         <returnedItem>EXB_CoreItemIndustrial</returnedItem>
@@ -765,7 +779,8 @@
   <RecipeDef ParentName="EXB_CraftBase">
     <defName>EXB_MakeCoreIndustrial</defName>
     <label>make industrial exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 10; fixed regeneration 20 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>An industrial power core with limited reserves and rapid recharge. Supports industrial modules and gives the mech a red appearance.
+Permanently implanted in the torso. Personal kills refill its energy; a complete set of limb modules enables mech transformation during overload.</description>
     <jobString>Making industrial exoskeleton core.</jobString>
     <products>
       <EXB_CoreItemIndustrial>1</EXB_CoreItemIndustrial>
@@ -815,7 +830,8 @@
   <RecipeDef ParentName="EXB_InstallBase">
     <defName>EXB_InstallCoreIndustrial</defName>
     <label>install industrial exoskeleton core</label>
-    <description>Permanent torso core; medical upgrades to higher tiers only, with no same-tier swaps, removal or refund. Normal capacity 10; fixed regeneration 20 per game second. Core quality scales capacity and metal armor maximum durability. No core overload drain. Every personally attributed kill, including animals and neutral targets, refills only this pawn. Core plus four distinct limbs score civilian 1 or military 2 per piece: 1-5 blue, 6-10 gold. Industrial cores force red; industrial limbs require an industrial core. Blue/red overload x1.5; gold x2.5. Limb bonuses, extra total movement, complete-mech built-in damage and melee range share this color multiplier. Four limbs are required to transform; partial sets retain ordinary overload. Complete-mech defense: body-part health uses the armor-color overload multiplier (blue/red x1.5; gold x2.5) while preserving wound fractions on mode changes. Metal armor consumes 100 units; maximum durability is 100 times the native metal hit-point factor times core quality. Armor absorbs 75% of incoming health damage, spending one durability per absorbed damage; shortages pass through. Depletion immediately retracts the mech and disables the core, limb bonuses, energy recovery and overload for two in-game hours. Recovery allows empty-armor transformation without absorption. Clear or replace plating in the management window to refund the remaining metal fraction into inventory.</description>
+    <description>An industrial power core with limited reserves and rapid recharge. Supports industrial modules and gives the mech a red appearance.
+Permanently implanted in the torso. Personal kills refill its energy; a complete set of limb modules enables mech transformation during overload.</description>
     <jobString>Installing industrial exoskeleton core.</jobString>
     <ingredients>
       <li>
@@ -840,7 +856,8 @@
   <ThingDef ParentName="EXB_ItemBase">
     <defName>EXB_ArmItemIndustrial</defName>
     <label>industrial exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>An industrial arm attachment focused on improving work efficiency.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <graphicData Inherit="False">
       <texPath>Things/Exoskeleton/Node</texPath>
       <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
@@ -876,7 +893,8 @@
   <HediffDef ParentName="EXB_ArmBase">
     <defName>EXB_ArmIndustrial</defName>
     <label>industrial exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>An industrial arm attachment focused on improving work efficiency.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <modExtensions>
       <li Class="ExoBionics.ExoModuleExtension">
         <returnedItem>EXB_ArmItemIndustrial</returnedItem>
@@ -903,7 +921,8 @@
   <RecipeDef ParentName="EXB_CraftBase">
     <defName>EXB_MakeArmIndustrial</defName>
     <label>make industrial exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>An industrial arm attachment focused on improving work efficiency.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Making industrial exoskeleton arm module.</jobString>
     <products>
       <EXB_ArmItemIndustrial>1</EXB_ArmItemIndustrial>
@@ -953,7 +972,8 @@
   <RecipeDef ParentName="EXB_InstallBase">
     <defName>EXB_InstallArmIndustrial</defName>
     <label>install industrial exoskeleton arm module</label>
-    <description>Auxiliary arm module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: global work speed +20 percentage points. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>An industrial arm attachment focused on improving work efficiency.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Installing industrial exoskeleton arm module.</jobString>
     <ingredients>
       <li>
@@ -978,7 +998,8 @@
   <ThingDef ParentName="EXB_ItemBase">
     <defName>EXB_LegItemIndustrial</defName>
     <label>industrial exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: move speed +1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Provides walking assistance for industrial work, helping the wearer reach tasks faster.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <graphicData Inherit="False">
       <texPath>Things/Exoskeleton/Node</texPath>
       <graphicClass>ExoBionics.Graphic_ExoTier</graphicClass>
@@ -1014,7 +1035,8 @@
   <HediffDef ParentName="EXB_LegBase">
     <defName>EXB_LegIndustrial</defName>
     <label>industrial exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: move speed +1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Provides walking assistance for industrial work, helping the wearer reach tasks faster.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <modExtensions>
       <li Class="ExoBionics.ExoModuleExtension">
         <returnedItem>EXB_LegItemIndustrial</returnedItem>
@@ -1041,7 +1063,8 @@
   <RecipeDef ParentName="EXB_CraftBase">
     <defName>EXB_MakeLegIndustrial</defName>
     <label>make industrial exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: move speed +1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Provides walking assistance for industrial work, helping the wearer reach tasks faster.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Making industrial exoskeleton leg module.</jobString>
     <products>
       <EXB_LegItemIndustrial>1</EXB_LegItemIndustrial>
@@ -1091,7 +1114,8 @@
   <RecipeDef ParentName="EXB_InstallBase">
     <defName>EXB_InstallLegIndustrial</defName>
     <label>install industrial exoskeleton leg module</label>
-    <description>Auxiliary leg module preserving the existing limb. Industrial limbs require an industrial core. With an available compatible core, one fixed-specification module provides: move speed +1. Armor-color overload scales offsets, ordinary stat factors and capacities. Incoming damage and ranged cooldown stat factors, stage scalars and damage factors stay fixed; per-module stat factors stack multiplicatively. Overload drain 2.5 per game second. Direct installation/replacement and the detach window preserve item ID and tier; limb items have no quality.</description>
+    <description>Provides walking assistance for industrial work, helping the wearer reach tasks faster.
+Requires an industrial core. Preserves the original limb; install or remove through Exoskeleton Management.</description>
     <jobString>Installing industrial exoskeleton leg module.</jobString>
     <ingredients>
       <li>
@@ -1116,7 +1140,7 @@
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>EXB_RemoveLimbs</defName>
     <label>remove all exoskeleton limb modules</label>
-    <description>Use direct limb installation or the unified remove-all button.</description>
+    <description>Remove all four limb modules through Exoskeleton Management and return the modules, preserving the core and original limbs.</description>
     <jobString>Removing all exoskeleton limb modules.</jobString>
     <workerClass>ExoBionics.Recipe_RemoveExoLimbs</workerClass>
     <isViolation>false</isViolation>
