@@ -2,7 +2,7 @@
 
 ![外骨骼装甲](About/Preview.png)
 
-RimWorld **1.6 / 1.7** 的独立外骨骼 Mod，发布版本 **0.14.3**。本仓库只包含游戏运行文件和说明。
+RimWorld **1.6 / 1.7** 的独立外骨骼 Mod，发布版本 **0.14.4**。本仓库只包含游戏运行文件和说明。
 
 - 14种核心与四肢物品；核心永久植入，四肢通过“外骨骼管理”装卸、更换。
 - 集齐左右手臂与左右腿后，过载触发20帧机甲变身；能量独立结算，亲自击杀回能。
@@ -14,19 +14,26 @@ RimWorld **1.6 / 1.7** 的独立外骨骼 Mod，发布版本 **0.14.3**。本仓
 
 全部14种物品的中英文介绍改为说明实际用途、游戏表现和使用限制；物品、安装后状态与制作／安装配方的说明保持一致。介绍不再列出品质影响、公式与具体加成数值。装备名称、配置、配方、程序与美术保持原样。
 
+## Harmony前置（0.14.4）
+
+发布包已移除两个版本的内置Harmony DLL，改为必需的独立Harmony Mod依赖。1.7.4985隔离引擎中，未启用CE的42项检查与启用CE的111项战斗／存档检查通过；均确认只加载独立Harmony提供的一份程序集。1.6三个Mod程序集的Harmony引用与独立Harmony 2.4.3一致，尚未在1.6引擎联测。
+
 ## 安装
 
-1. 点击本页 **Code → Download ZIP**，解压。
-2. 将包含 `About`、`Common`、`Compatibility`、`LoadFolders.xml`、`1.6`、`1.7` 的整个目录放入 RimWorld 的 `Mods` 目录。
-3. 在游戏的 Mod 列表启用“外骨骼仿生体 / Exoskeleton Bionics”，重启游戏。
+1. 先安装并启用独立的 [Harmony Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077)。
+2. 点击本页 **Code → Download ZIP**，解压。
+3. 将包含 `About`、`Common`、`Compatibility`、`LoadFolders.xml`、`1.6`、`1.7` 的整个目录放入 RimWorld 的 `Mods` 目录。
+4. 在游戏的 Mod 列表启用“外骨骼仿生体 / Exoskeleton Bionics”，重启游戏。
 
-只启用一个副本，不要同时加载本地版和同一Mod的工坊版。游戏会自动选择对应的版本目录。Harmony已内置；军用内容沿用皇权DLC条件。
+更新旧本地版时，请用新版替换整个Mod文件夹，避免旧版内置Harmony文件残留。
+
+只启用一个副本，不要同时加载本地版和同一Mod的工坊版。游戏会自动选择对应的版本目录。本Mod不附带Harmony；请将独立Harmony放在本Mod之前。启用CE时，加载顺序为Harmony → CE → 本Mod。军用内容沿用皇权DLC条件。
 
 工坊条目：[3826026606](https://steamcommunity.com/sharedfiles/filedetails/?id=3826026606)。本仓库上传不代表已更新Steam创意工坊。
 
 ## 兼容与验证
 
-1.7版基于1.7.4985编译，使用.NET 10与Harmony 3；1.6版保留原0.13.3 DLL与Harmony 2.4.3。物品定义、语言、贴图与许可在 `Common` 中共用，版本目录只放对应程序集。
+1.7版基于1.7.4985编译，使用.NET 10与独立Harmony提供的Harmony 3；1.6版保留原0.13.3 DLL，使用独立Harmony提供的对应版本。物品定义、语言与贴图在 `Common` 中共用，版本目录只放对应程序集。
 
 ```text
 About/               Mod信息、封面和工坊编号
@@ -34,9 +41,8 @@ Common/
   Defs/              共用物品与功能定义
   Languages/         共用中英文文本
   Textures/          共用贴图
-  Licenses/          Harmony许可
-1.6/Assemblies/      1.6专用Mod DLL与Harmony 2
-1.7/Assemblies/      1.7专用Mod DLL与Harmony 3
+1.6/Assemblies/      1.6专用Mod DLL
+1.7/Assemblies/      1.7专用Mod DLL
 Compatibility/
   CombatExtended/   启用CE时按游戏版本加载的小型兼容模块
 LoadFolders.xml      每个版本加载Common及自身目录
@@ -69,12 +75,12 @@ LoadFolders.xml      每个版本加载Common及自身目录
 
 | 环境 | 本次验证 |
 | --- | --- |
-| RimWorld 1.7.4985 + 本机CE 16.7.4.0 | 108项隔离引擎联测通过：真实射击耗弹、弹丸命中、伤害／穿甲、近战、持械、护甲、库存、击杀回能及存档 |
-| RimWorld 1.7.4985，未启用CE | 3项启动／原版行为检查通过，兼容程序集不加载 |
+| RimWorld 1.7.4985 + 本机CE 16.7.4.0 | 111项隔离引擎联测通过：独立Harmony来源、真实射击耗弹、弹丸命中、伤害／穿甲、近战、持械、护甲、库存、击杀回能及存档 |
+| RimWorld 1.7.4985，未启用CE | 42项检查通过：独立Harmony来源、金属护甲、自动修复、管理界面及存档 |
 | RimWorld 1.6.4871 | 对应兼容DLL编译和CLR4引用检查通过；尚未在1.6引擎中联测 |
 
 本机CE仍仅声明支持1.6；上表的1.7结果为这两个具体版本的联合验证。用户殖民地、其他CE版本和第三方武器组合仍需实际验收。
 
-## 第三方许可
+## 第三方组件
 
-Harmony的MIT许可保留于 `Common/Licenses/Harmony-MIT.txt`。游戏原始参考素材、开发源码、工具、测试、原画和历史备份均不包含在本仓库。
+Harmony由独立Harmony Mod提供，本发布包不分发其程序集；相关许可由上游提供。游戏原始参考素材、开发源码、工具、测试、原画和历史备份均不包含在本仓库。
