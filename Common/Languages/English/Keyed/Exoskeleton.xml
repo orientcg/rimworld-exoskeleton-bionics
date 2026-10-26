@@ -65,13 +65,13 @@
   <EXB_MetalArmorTitle>Metal armor plating</EXB_MetalArmorTitle>
   <EXB_MetalArmorEmpty>No metal loaded</EXB_MetalArmorEmpty>
   <EXB_MetalArmorManage>Manage armor</EXB_MetalArmorManage>
-  <EXB_MetalArmorClear>Clear and refund {0}</EXB_MetalArmorClear>
-  <EXB_MetalArmorCleared>Cleared. Remaining metal was returned to this pawn's inventory.</EXB_MetalArmorCleared>
-  <EXB_MetalArmorFailed>Insufficient or inaccessible material, or refund failed. Existing armor and resources are unchanged.</EXB_MetalArmorFailed>
-  <EXB_MetalArmorAbsorb>Absorb 100 units</EXB_MetalArmorAbsorb>
+  <EXB_MetalArmorClear>Clear: no refund</EXB_MetalArmorClear>
+  <EXB_MetalArmorCleared>Material cleared without refund. Automatic repair has stopped.</EXB_MetalArmorCleared>
+  <EXB_MetalArmorFailed>Same material already installed, insufficient metal, or inaccessible source. Existing armor and resources unchanged.</EXB_MetalArmorFailed>
+  <EXB_MetalArmorAbsorb>Load / replace: 100</EXB_MetalArmorAbsorb>
   <EXB_MetalArmorColumns>Metal / available / cost / maximum durability including core quality</EXB_MetalArmorColumns>
-  <EXB_MetalArmorInstructions>100 metal creates an armor health bar. Maximum = 100 x metal hit-point factor x core quality. Absorbs 75% of health damage at equal durability cost. Depletion retracts the mech and disables its core for 2 in-game hours. Clear or replace to refund remaining metal.</EXB_MetalArmorInstructions>
-  <EXB_MetalArmorTip>Complete-mech metal health absorbs 75% of incoming health damage, spending one durability per absorbed damage. Any shortage passes through. No extra random metal armor roll. Depletion instantly retracts the mech and disables limb bonuses, energy recovery and overload for 2 in-game hours. Recovery allows empty-armor transformation. Core quality scales maximum durability. Body-part health still uses the color multiplier x1.5/x2.5. Deactivation keeps durability. Refundable metal: {0}.</EXB_MetalArmorTip>
+  <EXB_MetalArmorInstructions>Load 100 metal once to retain its material. Maximum = 100 x metal HP factor x core quality. Absorbs 75% of health damage. Regenerates from empty to full in 2 in-game hours, including combat. Depletion shuts down the core for 2 hours and pauses repair. Clearing or replacing discards the old metal without refund.</EXB_MetalArmorInstructions>
+  <EXB_MetalArmorTip>Complete-mech plating absorbs 75% of health damage at equal durability cost; any shortage passes through. Load its material once: repairs continue in combat, ordinary overload and normal mode, reaching full from zero in 2 in-game hours without extra metal or energy. Depletion retracts the mech and disables the core for 2 hours, pausing repair. Repair resumes after recovery; empty-armor transformation remains allowed. Core quality scales maximum durability. Clearing removes the material and stops repair; replacement consumes 100 new metal. Clearing or replacing never refunds old metal.</EXB_MetalArmorTip>
   <EXB_ModuleFixed>Fixed specification; no quality</EXB_ModuleFixed>
   <EXB_CoreDamageStatus>Core damaged: offline for 2 in-game hours. Limb bonuses, energy recovery and overload are disabled.</EXB_CoreDamageStatus>
   <EXB_CoreDamageShort>Core damaged</EXB_CoreDamageShort>
@@ -82,7 +82,7 @@
   <EXB_ManageLimbs>Limb modules · {0} installed</EXB_ManageLimbs>
   <EXB_ManagementHint>Select a real module to fetch and install. Replacement consumes the new module and returns the old one on success. Actions affect only the displayed pawn.</EXB_ManagementHint>
   <EXB_ManageArmorNoCore>No core installed. Install a core through surgery to manage metal armor here.</EXB_ManageArmorNoCore>
-  <EXB_ManageMetalStock>Selected metal: {0} / 100 units available; reloaded maximum {1}. Absorbs 75% of health damage; clearing/replacing refunds the remaining metal fraction.</EXB_ManageMetalStock>
+  <EXB_ManageMetalStock>Metal {0} / 100; maximum {1}. Load once; 2-hour regeneration even in combat, paused during core shutdown. Replacement costs 100; no refund.</EXB_ManageMetalStock>
   <EXB_ManageJobQueued>Operation queued.</EXB_ManageJobQueued>
   <EXB_ManageInstallFailed>Module unavailable, wrong body part, or unreachable. Existing installation unchanged.</EXB_ManageInstallFailed>
   <EXB_ManageInstall>Install module</EXB_ManageInstall>
@@ -90,4 +90,5 @@
   <EXB_ManageInventory>Inventory</EXB_ManageInventory>
   <EXB_ManageMap>Map</EXB_ManageMap>
   <EXB_ManageNoStock>No accessible module fits this body part. Industrial modules need an industrial core.</EXB_ManageNoStock>
+  <EXB_MetalArmorInstalled>Installed: auto-repair</EXB_MetalArmorInstalled>
 </LanguageData>

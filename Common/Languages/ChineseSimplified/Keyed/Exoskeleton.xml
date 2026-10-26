@@ -65,13 +65,13 @@
   <EXB_MetalArmorTitle>金属附加装甲</EXB_MetalArmorTitle>
   <EXB_MetalArmorEmpty>未装填金属</EXB_MetalArmorEmpty>
   <EXB_MetalArmorManage>管理装甲</EXB_MetalArmorManage>
-  <EXB_MetalArmorClear>清空并返还 {0} 单位</EXB_MetalArmorClear>
-  <EXB_MetalArmorCleared>已清空；剩余金属已返还至该角色的物品栏。</EXB_MetalArmorCleared>
-  <EXB_MetalArmorFailed>材料不足、不可达或返还失败；原装甲及材料保持。</EXB_MetalArmorFailed>
-  <EXB_MetalArmorAbsorb>吸收100单位</EXB_MetalArmorAbsorb>
+  <EXB_MetalArmorClear>清空材质（不退料）</EXB_MetalArmorClear>
+  <EXB_MetalArmorCleared>已清空材质，不退还金属；自动修复已停止。</EXB_MetalArmorCleared>
+  <EXB_MetalArmorFailed>同种材质已装填、材料不足或无法到达。现有护甲与资源保持。</EXB_MetalArmorFailed>
+  <EXB_MetalArmorAbsorb>装填／换材100单位</EXB_MetalArmorAbsorb>
   <EXB_MetalArmorColumns>金属 · 可用数量 / 消耗 · 含核心品质的最大耐久</EXB_MetalArmorColumns>
-  <EXB_MetalArmorInstructions>100单位金属构建护甲血条，上限=100×金属生命值系数×核心品质。吸收75%伤害并等量扣耐久；耗尽解除机甲，核心停机2游戏小时。清空／更换按剩余比例退料至物品栏。</EXB_MetalArmorInstructions>
-  <EXB_MetalArmorTip>完整机甲的金属血条吸收75%入射生命伤害，每吸收1点扣1耐久；耐久不足时差额穿透。不再进行额外金属护甲随机判定。耗尽立即收甲、核心停机2游戏小时；部件基础加成、能量恢复与过载停用。恢复后允许空甲变身。核心品质影响耐久上限；全身部位血量仍按颜色×1.5／×2.5。退出机甲保留剩余耐久。当前可退原金属{0}单位。</EXB_MetalArmorTip>
+  <EXB_MetalArmorInstructions>首次装填100单位金属后保留材质，耐久上限=100×金属生命值系数×核心品质。吸收75%生命伤害；随时自动恢复，2游戏小时从零回满。破甲停机2小时，期间暂停恢复；清空／换材不退还旧金属。</EXB_MetalArmorInstructions>
+  <EXB_MetalArmorTip>完整机甲的金属血条吸收75%生命伤害，每吸收1点扣1耐久，耐久不足时差额穿透。首次装填后无需重复补充：战斗、普通过载与未过载时均按上限每2游戏小时回满，不额外消耗金属或能量。耗尽立即收甲并使核心停机2游戏小时，期间暂停耐久恢复；核心恢复后开始自动修复，允许先空甲变身。核心品质影响耐久上限。清空会取消所装材质并停止自动修复；换材重新消耗100单位。清空或换材均不退还旧金属。</EXB_MetalArmorTip>
   <EXB_ModuleFixed>固定规格模块 · 无品质</EXB_ModuleFixed>
   <EXB_CoreDamageStatus>核心损坏：停机2游戏小时，期间部件加成、能量恢复与过载停用。</EXB_CoreDamageStatus>
   <EXB_CoreDamageShort>核心损坏</EXB_CoreDamageShort>
@@ -82,7 +82,7 @@
   <EXB_ManageLimbs>四肢模块 · 已安装 {0} 件</EXB_ManageLimbs>
   <EXB_ManagementHint>选择实物模块后前往安装；更换成功才消耗新件并返还旧件。所有操作仅作用于当前角色。</EXB_ManagementHint>
   <EXB_ManageArmorNoCore>尚无可用核心。先通过医疗手术安装核心，即可在此管理金属护甲。</EXB_ManageArmorNoCore>
-  <EXB_ManageMetalStock>所选金属可用 {0} / 100 单位 · 装填后上限 {1}。吸收75%生命伤害；清空／更换按剩余比例退料。</EXB_ManageMetalStock>
+  <EXB_ManageMetalStock>所选金属 {0} / 100 · 耐久上限 {1}。首次／换材消耗100；装填后随时修复，2游戏小时回满，核心停机期间暂停。</EXB_ManageMetalStock>
   <EXB_ManageJobQueued>已安排操作。</EXB_ManageJobQueued>
   <EXB_ManageInstallFailed>模块已不可用、部位不匹配或材料不可达；原装配保持。</EXB_ManageInstallFailed>
   <EXB_ManageInstall>安装模块</EXB_ManageInstall>
@@ -90,4 +90,5 @@
   <EXB_ManageInventory>随身库存</EXB_ManageInventory>
   <EXB_ManageMap>地图</EXB_ManageMap>
   <EXB_ManageNoStock>没有可取用且匹配此部位的模块（工业模块需要工业核心）。</EXB_ManageNoStock>
+  <EXB_MetalArmorInstalled>已装填 · 自动修复</EXB_MetalArmorInstalled>
 </LanguageData>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <EXB_CoreDamaged.label>外骨骼核心损坏</EXB_CoreDamaged.label>
-  <EXB_CoreDamaged.description>核心损坏：停机2游戏小时，期间部件加成、能量恢复与过载停用。到期自动恢复；护甲需要重新装填才能吸收伤害。</EXB_CoreDamaged.description>
+  <EXB_CoreDamaged.description>核心损坏：停机2游戏小时，期间部件加成、能量恢复、过载与耐久修复停用。金属材质保留，无需重新装填；到期核心恢复并开始自动修复护甲，耐久从零回满需要另2游戏小时。</EXB_CoreDamaged.description>
 </LanguageData>

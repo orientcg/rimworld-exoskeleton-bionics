@@ -3,7 +3,7 @@
   <HediffDef>
     <defName>EXB_CoreDamaged</defName>
     <label>exoskeleton core damaged</label>
-    <description>The core has shut down after its armor was depleted. Limb bonuses, energy regeneration and overload are disabled for two in-game hours. It recovers automatically; metal armor remains empty until reloaded.</description>
+    <description>The core has shut down after armor depletion. Limb bonuses, energy regeneration, overload and armor repair pause for two in-game hours. The loaded metal is retained; armor automatically repairs after the core recovers, reaching full from zero in another two in-game hours.</description>
     <hediffClass>ExoBionics.Hediff_ExoCoreDamaged</hediffClass>
     <isBad>true</isBad>
     <everCurableByItem>false</everCurableByItem>
