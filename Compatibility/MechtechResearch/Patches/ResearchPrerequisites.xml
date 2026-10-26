@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/RecipeDef[defName="EXB_CustomArm_159596_Make" or defName="EXB_MakeCore" or defName="EXB_MakeArm" or defName="EXB_MakeLeg"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="EXB_CustomArm_159596_Make" or defName="EXB_MakeCore" or defName="EXB_MakeArm" or defName="EXB_MakeLeg"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="False">
+              <li>BasicMechtech</li>
+            </researchPrerequisites>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/RecipeDef[defName="EXB_CustomCore_353544_Make" or defName="EXB_CustomArm_375479_Make" or defName="EXB_MakeCoreIndustrial" or defName="EXB_MakeArmIndustrial" or defName="EXB_MakeLegIndustrial"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="EXB_CustomCore_353544_Make" or defName="EXB_CustomArm_375479_Make" or defName="EXB_MakeCoreIndustrial" or defName="EXB_MakeArmIndustrial" or defName="EXB_MakeLegIndustrial"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="False">
+              <li>StandardMechtech</li>
+            </researchPrerequisites>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/RecipeDef[defName="EXB_CustomArm_734189_Make" or defName="EXB_CustomArm_396553_Make" or defName="EXB_MakeCoreMilitary" or defName="EXB_MakeArmMilitary" or defName="EXB_MakeLegMilitary"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="EXB_CustomArm_734189_Make" or defName="EXB_CustomArm_396553_Make" or defName="EXB_MakeCoreMilitary" or defName="EXB_MakeArmMilitary" or defName="EXB_MakeLegMilitary"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="False">
+              <li>HighMechtech</li>
+            </researchPrerequisites>
+          </value>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
