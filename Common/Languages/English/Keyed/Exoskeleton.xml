@@ -91,4 +91,18 @@
   <EXB_ManageMap>Map</EXB_ManageMap>
   <EXB_ManageNoStock>No accessible module fits this body part. Industrial modules need an industrial core.</EXB_ManageNoStock>
   <EXB_MetalArmorInstalled>Installed: auto-repair</EXB_MetalArmorInstalled>
+
+  <!-- Compact management window -->
+  <EXB_ManageLoadShort>Load metal</EXB_ManageLoadShort>
+  <EXB_ManageLockedShort>Locked implant</EXB_ManageLockedShort>
+  <EXB_ManageFooterShort>Replaced modules are returned after a successful installation.</EXB_ManageFooterShort>
+  <EXB_ManageRepairPaused>Repair paused</EXB_ManageRepairPaused>
+  <EXB_ManageArmorFull>Durability full</EXB_ManageArmorFull>
+  <EXB_ManageRepairing>Auto-repairing</EXB_ManageRepairing>
+  <EXB_ManageAvailable>Available: {0}</EXB_ManageAvailable>
+  <EXB_ManageLoadedShort>Loaded</EXB_ManageLoadedShort>
+  <EXB_ManageReplaceMetal>Replace metal</EXB_ManageReplaceMetal>
+  <EXB_ManageClearShort>Clear metal</EXB_ManageClearShort>
+  <EXB_ManageStockShort>Available metal: {0} / 100</EXB_ManageStockShort>
+  <EXB_ManageMetalHintShort>Loading or replacing costs 100 units. Clearing gives no refund.</EXB_ManageMetalHintShort>
 </LanguageData>

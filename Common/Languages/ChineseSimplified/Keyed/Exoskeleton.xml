@@ -91,4 +91,18 @@
   <EXB_ManageMap>地图</EXB_ManageMap>
   <EXB_ManageNoStock>没有可取用且匹配此部位的模块（工业模块需要工业核心）。</EXB_ManageNoStock>
   <EXB_MetalArmorInstalled>已装填 · 自动修复</EXB_MetalArmorInstalled>
+
+  <!-- Compact management window -->
+  <EXB_ManageLoadShort>装填金属</EXB_ManageLoadShort>
+  <EXB_ManageLockedShort>不可拆卸</EXB_ManageLockedShort>
+  <EXB_ManageFooterShort>更换成功后返还旧模块。</EXB_ManageFooterShort>
+  <EXB_ManageRepairPaused>修复暂停</EXB_ManageRepairPaused>
+  <EXB_ManageArmorFull>耐久已满</EXB_ManageArmorFull>
+  <EXB_ManageRepairing>自动修复</EXB_ManageRepairing>
+  <EXB_ManageAvailable>可用 {0}</EXB_ManageAvailable>
+  <EXB_ManageLoadedShort>已装填</EXB_ManageLoadedShort>
+  <EXB_ManageReplaceMetal>更换材质</EXB_ManageReplaceMetal>
+  <EXB_ManageClearShort>清空材质</EXB_ManageClearShort>
+  <EXB_ManageStockShort>可用金属 {0} / 100</EXB_ManageStockShort>
+  <EXB_ManageMetalHintShort>首次装填或换材消耗100单位；清空不退料。</EXB_ManageMetalHintShort>
 </LanguageData>
